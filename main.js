@@ -10,7 +10,7 @@ function playSound(event) {
 function removeTransition(event) {
         if (event.propertyName !== 'transform') return; // skip if its not a transform
 
-        this.classList.remove('playing'); // this is equal to key
+        this.classList.remove('playing'); 
 }
 
 const keys = document.querySelectorAll('.key');
