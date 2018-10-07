@@ -10,16 +10,11 @@ function playKeyboard(event) {
 function removeTransition(event) {
         if (event.propertyName !== 'transform') return; // skip if its not a transform
 
-<<<<<<< HEAD
         this.classList.remove('playing');
-=======
-        this.classList.remove('playing'); 
->>>>>>> ca03b67d4ee9a2369b53587e2ccded2ccc15c08c
 }
 
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-<<<<<<< HEAD
 keys.forEach(key => key.addEventListener('click', playMouseClick));
 keys.forEach(key => key.addEventListener('touch', playMouseClick));
 
@@ -34,6 +29,3 @@ function playMouseClick(event) {
         audio.play();
         key.classList.add('playing');
 }
-=======
-window.addEventListener('keydown', playSound);
->>>>>>> ca03b67d4ee9a2369b53587e2ccded2ccc15c08c
