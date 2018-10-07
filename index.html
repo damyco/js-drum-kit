@@ -8,68 +8,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="mainstyle.css" />
     <link href="https://fonts.googleapis.com/css?family=Lobster|Ubuntu" rel="stylesheet">
+
 </head>
 
 <body>
-    <div>
-        <h1>javaScript Drum Kit</h1>
-    </div>
-    <div class="keys-container">
+    <h1>JavaScript Drum Kit</h1>
+    <div class="grid">
 
         <div data-key="81" class="key">
-            <kbd>Q</kbd>
-            <span class="sound">clap</span>
+            <kbd data-key="81">Q</kbd>
+            </br>
+            <span data-key="81" class="sound">clap</span>
         </div>
+
         <div data-key="87" class="key">
-            <kbd>W</kbd>
-            <span class="sound">hi-hat</span>
+            <kbd data-key="87">W</kbd>
+            </br>
+            <span data-key="87" class="sound">hi-hat</span>
         </div>
         <div data-key="69" class="key">
-            <kbd>E</kbd>
-            <span class="sound">kick</span>
+            <kbd data-key="69">E</kbd>
+            </br>
+            <span data-key="69" class="sound">kick</span>
         </div>
         <div data-key="65" class="key">
-            <kbd>A</kbd>
-            <span class="sound">open HH</span>
+            <kbd data-key="65">A</kbd>
+            </br>
+            <span data-key="65" class="sound">op HH</span>
         </div>
         <div data-key="83" class="key">
-            <kbd>S</kbd>
-            <span class="sound">snare</span>
+            <kbd data-key="83">S</kbd>
+            </br>
+            <span data-key="83" class="sound">snare</span>
         </div>
         <div data-key="68" class="key">
-            <kbd>D</kbd>
-            <span class="sound">crash</span>
+            <kbd data-key="68">D</kbd>
+            </br>
+            <span data-key="68" class="sound">crash</span>
         </div>
         <div data-key="90" class="key">
-            <kbd>Z</kbd>
-            <span class="sound">ride</span>
+            <kbd data-key="90">Z</kbd>
+            </br>
+            <span data-key="90" class="sound">ride</span>
         </div>
         <div data-key="88" class="key">
-            <kbd>X</kbd>
-            <span class="sound">tom one</span>
+            <kbd data-key="88">X</kbd>
+            </br>
+            <span data-key="88" class="sound">tom </span>
         </div>
         <div data-key="67" class="key">
-            <kbd>C</kbd>
-            <span class="sound">tom two</span>
-        </div>
-        <div>
-            <h6>Press key to play sound.</h6>
+            <kbd data-key="67">C</kbd>
+            </br>
+            <span data-key="67" class="sound">tom </span>
         </div>
     </div>
+    <h6>Press a key to play sound.</h6>
 
-    <audio data-key="81" src="http://k003.kiwi6.com/hotlink/mgi4iqeiiq/01clap.wav"></audio>
-    <audio data-key="87" src="http://k003.kiwi6.com/hotlink/dxoa2gs7bo/02hihat.wav"></audio>
-    <audio data-key="69" src="http://k003.kiwi6.com/hotlink/425mwwrw9s/03kick.wav "></audio>
-    <audio data-key="65" src="http://k003.kiwi6.com/hotlink/xdy976dag6/04openhh.wav"></audio>
-    <audio data-key="83" src="http://k003.kiwi6.com/hotlink/84awmo5ufk/05snare.wav"></audio>
-    <audio data-key="68" src="http://k003.kiwi6.com/hotlink/p5gzch948n/06crash.wav"></audio>
-    <audio data-key="90" src="http://k003.kiwi6.com/hotlink/o0auskp3d0/07ride.wav"></audio>
-    <audio data-key="88" src="http://k003.kiwi6.com/hotlink/syy9yj2t5y/08tom1.wav"></audio>
-    <audio data-key="67" src="http://k003.kiwi6.com/hotlink/1pcbl6no0d/09tom2.wav"></audio>
-
+    <audio data-key="81" src="audio/01clap.wav"></audio>
+    <audio data-key="87" src="audio/02hihat.wav"></audio>
+    <audio data-key="69" src="audio/03kick.wav "></audio>
+    <audio data-key="65" src="audio/04openhh.wav"></audio>
+    <audio data-key="83" src="audio/05snare.wav"></audio>
+    <audio data-key="68" src="audio/06crash.wav"></audio>
+    <audio data-key="90" src="audio/07ride.wav"></audio>
+    <audio data-key="88" src="audio/08tom1.wav"></audio>
+    <audio data-key="67" src="audio/09tom2.wav"></audio>
 
     <script src="main.js"></script>
-
 </body>
 
 </html>

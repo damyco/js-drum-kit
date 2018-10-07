@@ -1,17 +1,7 @@
 * {
-    padding: 0;
+    padding: 0 auto;
     margin: 0 auto;
     font-family: 'Ubuntu', sans-serif;
-}
-
-h1 {
-    font-family: 'Lobster', cursive;
-    color: #ffc600;
-    text-shadow: 0 0 10px black;
-    text-align: center;
-    padding-top: 2rem;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
 }
 
 body {
@@ -21,62 +11,132 @@ body {
     background-size: cover;
 }
 
-.keys-container {
-    padding: 2rem 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    width: 40%;
-    flex-flow: wrap;
-    -webkit-flex-flow: wrap;
-    justify-content: space-around;
-    justify-content: center;
+.hidden {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 3vh;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: space-evenly;
     align-items: center;
-    min-width: 400px;
+    max-width: 425px;
+    margin: 0 auto;
 }
 
 .key {
-    flex-grow: 1;
+    margin: 3px;
+    align-self: center;
+    justify-self: stretch;
+    text-align: center;
+    padding: 1rem;
     border: 4px solid black;
     border-radius: 5px;
-    margin: 1rem;
-    font-size: 1rem;
-    padding: 1rem 0;
-    transition: all 0.07s;
-    width: 20%;
-    text-align: center;
-    color: white;
     background: rgba(0, 0, 0, 0.4);
+    color: white;
     text-shadow: 0 0 5px black;
+    font-size: 0.5rem;
+    transition: all 0.07s;
 }
 
 .playing {
-    transform: scale(1.1);
     border-color: #ffc600;
     box-shadow: 0 0 10px #ffc600;
+    transform: scale(1.1);
 }
 
 kbd {
-    display: block;
-    font-size: 3rem;
-    padding: 1rem 0;
+    padding: 0.5rem;
+    font-size: 2rem;
 }
 
 .sound {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #ffc600;
 }
 
-h6 {
+h1 {
+    padding: 1.5rem;
     font-family: 'Lobster', cursive;
     color: #ffc600;
-    text-shadow: 0 0 12px black;
+    text-shadow: 0 0 10px black;
     text-align: center;
-    padding-top: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+h6 {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Lobster', cursive;
     font-size: 1.5rem;
     letter-spacing: 1px;
+    text-shadow: 0 0 12px black;
+    color: #ffc600;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-size: 130% 180%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 160% 160%;
+    }
+    .grid {
+        grid-gap: 0.3rem;
+        width: 100%;
+    }
+    .key {
+        padding: 3rem;
+    }
+    kbd {
+        font-size: 0;
+        padding: 20px 25px;
+    }
+    .playing {
+        background: rgba(255, 198, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 625px) {
+    body {
+        background-size: 160% 160%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        background-size: 240% 240%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .key {
+        padding: 1.5rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .key {
+        padding: 1rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+    body {
+        background-size: 300% 280%;
+    }
 }
